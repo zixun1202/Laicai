@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E9D5AE111C19146BF83B6F /* NetWorthCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E9AA8EA3F4FA0659D9815 /* NetWorthCalculator.swift */; };
+		02B329A5A4B8F49311207766 /* ManualEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA647944569DF9974BDF459 /* ManualEntryView.swift */; };
+		1351024D550789A97EEC2134 /* BookkeepingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B3254FB10A39CE630E2CE /* BookkeepingView.swift */; };
+		1897A57E37945E67C3260A72 /* AssetEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B06CCFDD15E4D789F2924 /* AssetEditorView.swift */; };
+		25320F20CAEC32A9046E7592 /* PermissionsAndEmptyStateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093746EEE1E9ADABE5C2E1C0 /* PermissionsAndEmptyStateUITests.swift */; };
+		2F21FD3B1906053666ACD527 /* ModelSchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630B8720A3B2D780F3BBF94 /* ModelSchemaTests.swift */; };
+		2F65BBC9B9692C021F622CA1 /* LaicaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259890810D82E2D10DD5E015 /* LaicaiApp.swift */; };
+		3C269DCDC892293AC167D98E /* InvestmentDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB82F9D0AFCD5DF033260466 /* InvestmentDashboardView.swift */; };
+		46F33E45C2AC46BCB51A4E6E /* DraftConfirmationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B1489C60671F64C6134B3 /* DraftConfirmationServiceTests.swift */; };
+		48E1B978D06BC08ABB7D09BB /* LaicaiLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8951FA3FF61645A27BA56E0 /* LaicaiLaunchTests.swift */; };
+		5BFE5AEFA6F7DA6E245981F1 /* NetWorthCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FEC2C983AF50230C2CCC53 /* NetWorthCalculatorTests.swift */; };
+		5D48DA20C25A6513FFF8D3AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFD435AB755377F8D9EC23A /* SettingsView.swift */; };
+		63A1A340205E8C5C3AC3287D /* DefaultCategorySeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A761C07480C30F78F8FA72E0 /* DefaultCategorySeeder.swift */; };
+		6C1F94E2222B895C57BAF0A3 /* HomeSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35196527A2F89D7927FE5982 /* HomeSummaryTests.swift */; };
+		754091CA60AEC7FA7589C98E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE383BA7219EA6641DBA18 /* UserProfile.swift */; };
+		7609FDF223540CC04DCF9E77 /* AssetUpsertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABFA16AC882870E1DF54C6 /* AssetUpsertService.swift */; };
+		7E09C2FE12EB9F5BD1493433 /* WealthSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B6ADFA0530C678D7D1DD9 /* WealthSummaryCard.swift */; };
+		8674A555ABB9D43085A87136 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1458D91607348C659829BE4 /* AssetsView.swift */; };
+		89FA6C528C896A3994378723 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F90965124BD72799CEC8A /* OCRService.swift */; };
+		8DEC1EEF27DF7609C67514A4 /* DraftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014BA9D983F552E8B2577118 /* DraftListView.swift */; };
+		93F3943BA9D339DF6AB074F5 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BD8843C130CC74E856CC2 /* Asset.swift */; };
+		A035CC7BB9B6B222C0F48728 /* AssetUpsertServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */; };
+		A79618CD8DE4E139C922E7FA /* DraftConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571932AE2EEF9335477DEA42 /* DraftConfirmationView.swift */; };
+		A7C2D7FF82D3107730AF9072 /* FinanceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7915015E3BDEC5E4034F4 /* FinanceRepository.swift */; };
+		B624CC6F8986686161AFA579 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B0A66EC56CE6040D6FC0C /* AppContainer.swift */; };
+		BE075F93820C0BBC121FE068 /* VoiceRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052987B8C8BFCF2408186EB2 /* VoiceRecognitionService.swift */; };
+		BFF4948D111391AEA9029FA1 /* DraftCreationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB924F7AFE109D656DB8298 /* DraftCreationServiceTests.swift */; };
+		C60C8114B542530EB4771788 /* TransactionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2F0E507DFEE04808C45F97 /* TransactionRecord.swift */; };
+		C7B9B45FFCEA6328CBD7BE15 /* DraftEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235887F19062E2933AF0FD35 /* DraftEntry.swift */; };
+		CD4610D23D9683056031D9A3 /* DraftCreationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4D1860073FFFD62D2FC2EA /* DraftCreationService.swift */; };
+		CFB817E5A1897C391127D408 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5E2AE8571781F388A8E7FC /* HomeView.swift */; };
+		D1C5D503D8568C6CBB6CB202 /* HoldingSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87283BED054FF88B76B9B9 /* HoldingSnapshot.swift */; };
+		D867A303EA4A1D72692B2540 /* AssetFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653BA94F2032E3B25BF8951 /* AssetFlowUITests.swift */; };
+		D8AE39D6FC9B58F5467A456D /* DraftConfirmationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A6172E989C992FA1DAA58 /* DraftConfirmationService.swift */; };
+		DC0E2221C10809EE36C793BC /* AssetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6969952FCDAC2001145841C /* AssetCategory.swift */; };
+		DEC6774C44E766786AEE4338 /* ManualEntryFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3516075228CFE25751ED3051 /* ManualEntryFlowTests.swift */; };
+		E3D300BFD851D447223BDE13 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F728EDE6A5DE32C6C9370 /* HomeViewModel.swift */; };
+		E4577564C736ADC25AA59D3D /* LocalDraftParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029826C8A1019B345C74F5CD /* LocalDraftParserTests.swift */; };
+		E4AAD4CB38B8EF6ED6856FF4 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9516799ED7FD973657700A15 /* Account.swift */; };
+		E4E064736922CEFD5C07C862 /* VoiceDraftFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13C5FD4CB59E5A473EA1B4C /* VoiceDraftFlowTests.swift */; };
+		E53C55826218E4F6962FF4EC /* PreviewSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C01491AB64973614BCFB1 /* PreviewSeed.swift */; };
+		F0F5A94ADB6C119EBEE8E4A4 /* LocalDraftParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349653757A0706F3295A74B5 /* LocalDraftParser.swift */; };
+		F97F151FD151AD1E47902568 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A997D0B60E47293E4CAEFFD /* RootTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B59466A37AE9B6905B35E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9469F3BD7DB7A857E185C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA4650EACCCFF5F12C83621;
+			remoteInfo = Laicai;
+		};
+		A0ACD72B9E85B1CE1EFE47B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9469F3BD7DB7A857E185C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA4650EACCCFF5F12C83621;
+			remoteInfo = Laicai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014BA9D983F552E8B2577118 /* DraftListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftListView.swift; sourceTree = "<group>"; };
+		029826C8A1019B345C74F5CD /* LocalDraftParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDraftParserTests.swift; sourceTree = "<group>"; };
+		052987B8C8BFCF2408186EB2 /* VoiceRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecognitionService.swift; sourceTree = "<group>"; };
+		093746EEE1E9ADABE5C2E1C0 /* PermissionsAndEmptyStateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsAndEmptyStateUITests.swift; sourceTree = "<group>"; };
+		100F90965124BD72799CEC8A /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		1501AABCC2A695A0159A96F0 /* LaicaiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LaicaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A997D0B60E47293E4CAEFFD /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		235887F19062E2933AF0FD35 /* DraftEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftEntry.swift; sourceTree = "<group>"; };
+		259890810D82E2D10DD5E015 /* LaicaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaicaiApp.swift; sourceTree = "<group>"; };
+		274E9AA8EA3F4FA0659D9815 /* NetWorthCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthCalculator.swift; sourceTree = "<group>"; };
+		2B0B0A66EC56CE6040D6FC0C /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		2CFD435AB755377F8D9EC23A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2D4D1860073FFFD62D2FC2EA /* DraftCreationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftCreationService.swift; sourceTree = "<group>"; };
+		349653757A0706F3295A74B5 /* LocalDraftParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDraftParser.swift; sourceTree = "<group>"; };
+		3516075228CFE25751ED3051 /* ManualEntryFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualEntryFlowTests.swift; sourceTree = "<group>"; };
+		35196527A2F89D7927FE5982 /* HomeSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSummaryTests.swift; sourceTree = "<group>"; };
+		3D9BD8843C130CC74E856CC2 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		4B1C01491AB64973614BCFB1 /* PreviewSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSeed.swift; sourceTree = "<group>"; };
+		4D9A6172E989C992FA1DAA58 /* DraftConfirmationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftConfirmationService.swift; sourceTree = "<group>"; };
+		54227CFE64DC31BC0A348248 /* LaicaiUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LaicaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		571932AE2EEF9335477DEA42 /* DraftConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftConfirmationView.swift; sourceTree = "<group>"; };
+		5F3B6ADFA0530C678D7D1DD9 /* WealthSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WealthSummaryCard.swift; sourceTree = "<group>"; };
+		650F728EDE6A5DE32C6C9370 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6CB924F7AFE109D656DB8298 /* DraftCreationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftCreationServiceTests.swift; sourceTree = "<group>"; };
+		6F2F0E507DFEE04808C45F97 /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
+		71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUpsertServiceTests.swift; sourceTree = "<group>"; };
+		86ABFA16AC882870E1DF54C6 /* AssetUpsertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUpsertService.swift; sourceTree = "<group>"; };
+		9516799ED7FD973657700A15 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		9653BA94F2032E3B25BF8951 /* AssetFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetFlowUITests.swift; sourceTree = "<group>"; };
+		99AE383BA7219EA6641DBA18 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		9C5E2AE8571781F388A8E7FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9FA647944569DF9974BDF459 /* ManualEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualEntryView.swift; sourceTree = "<group>"; };
+		A761C07480C30F78F8FA72E0 /* DefaultCategorySeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCategorySeeder.swift; sourceTree = "<group>"; };
+		A8951FA3FF61645A27BA56E0 /* LaicaiLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaicaiLaunchTests.swift; sourceTree = "<group>"; };
+		AB87283BED054FF88B76B9B9 /* HoldingSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingSnapshot.swift; sourceTree = "<group>"; };
+		AC1B1489C60671F64C6134B3 /* DraftConfirmationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftConfirmationServiceTests.swift; sourceTree = "<group>"; };
+		B13C5FD4CB59E5A473EA1B4C /* VoiceDraftFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDraftFlowTests.swift; sourceTree = "<group>"; };
+		B630B8720A3B2D780F3BBF94 /* ModelSchemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSchemaTests.swift; sourceTree = "<group>"; };
+		B66B3254FB10A39CE630E2CE /* BookkeepingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookkeepingView.swift; sourceTree = "<group>"; };
+		B6969952FCDAC2001145841C /* AssetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCategory.swift; sourceTree = "<group>"; };
+		D98B06CCFDD15E4D789F2924 /* AssetEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetEditorView.swift; sourceTree = "<group>"; };
+		E7FEC2C983AF50230C2CCC53 /* NetWorthCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthCalculatorTests.swift; sourceTree = "<group>"; };
+		F1458D91607348C659829BE4 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
+		F242FD366FDC5ACCAFD96470 /* Laicai.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Laicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB82F9D0AFCD5DF033260466 /* InvestmentDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentDashboardView.swift; sourceTree = "<group>"; };
+		FED7915015E3BDEC5E4034F4 /* FinanceRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00CA6EAEA64CEDD332024E82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9516799ED7FD973657700A15 /* Account.swift */,
+				3D9BD8843C130CC74E856CC2 /* Asset.swift */,
+				B6969952FCDAC2001145841C /* AssetCategory.swift */,
+				235887F19062E2933AF0FD35 /* DraftEntry.swift */,
+				AB87283BED054FF88B76B9B9 /* HoldingSnapshot.swift */,
+				6F2F0E507DFEE04808C45F97 /* TransactionRecord.swift */,
+				99AE383BA7219EA6641DBA18 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08DB255303AC8BAC4EFC2FCB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2CFD435AB755377F8D9EC23A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		14FAADBA451AE33DF5D81852 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86ABFA16AC882870E1DF54C6 /* AssetUpsertService.swift */,
+				4D9A6172E989C992FA1DAA58 /* DraftConfirmationService.swift */,
+				2D4D1860073FFFD62D2FC2EA /* DraftCreationService.swift */,
+				274E9AA8EA3F4FA0659D9815 /* NetWorthCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1CADD82DE7E577CB9847268E /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				052987B8C8BFCF2408186EB2 /* VoiceRecognitionService.swift */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		3E6979C626E01D04BC198236 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				349653757A0706F3295A74B5 /* LocalDraftParser.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		45D7A600C81DD10F6A418CC6 /* LaicaiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9653BA94F2032E3B25BF8951 /* AssetFlowUITests.swift */,
+				A8951FA3FF61645A27BA56E0 /* LaicaiLaunchTests.swift */,
+				093746EEE1E9ADABE5C2E1C0 /* PermissionsAndEmptyStateUITests.swift */,
+			);
+			path = LaicaiUITests;
+			sourceTree = "<group>";
+		};
+		60B305B2A923746B7ECD5396 /* Laicai */ = {
+			isa = PBXGroup;
+			children = (
+				FC8ED3C8E5D907A4B5EF1189 /* App */,
+				D83D4A132B71331FC5E4A119 /* Data */,
+				B38E614D3E3264134139370D /* Domain */,
+				79137ADB276D211E01E7BC06 /* Features */,
+				A5FA180EE407F9752D813B51 /* Resources */,
+				69A0701D1D50663FE682E076 /* Services */,
+			);
+			path = Laicai;
+			sourceTree = "<group>";
+		};
+		637EDEB2762977FCC9FD04A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F242FD366FDC5ACCAFD96470 /* Laicai.app */,
+				1501AABCC2A695A0159A96F0 /* LaicaiTests.xctest */,
+				54227CFE64DC31BC0A348248 /* LaicaiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A0701D1D50663FE682E076 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7EF22C0FF783BC27475AC8F2 /* OCR */,
+				3E6979C626E01D04BC198236 /* Parsing */,
+				1CADD82DE7E577CB9847268E /* Voice */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		717FAB3F279D0DFA9DB29D47 /* Investments */ = {
+			isa = PBXGroup;
+			children = (
+				FB82F9D0AFCD5DF033260466 /* InvestmentDashboardView.swift */,
+			);
+			path = Investments;
+			sourceTree = "<group>";
+		};
+		79137ADB276D211E01E7BC06 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BA05A92758162889DFCC7480 /* Assets */,
+				9B8320B1A239AB991FA1B90F /* Bookkeeping */,
+				E9D99C237D9526CB813F5036 /* Home */,
+				717FAB3F279D0DFA9DB29D47 /* Investments */,
+				C65BF499FBDC6446B067FB85 /* Root */,
+				08DB255303AC8BAC4EFC2FCB /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7A965425DEB08489573FBBE3 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+				A761C07480C30F78F8FA72E0 /* DefaultCategorySeeder.swift */,
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
+		7EF22C0FF783BC27475AC8F2 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				100F90965124BD72799CEC8A /* OCRService.swift */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		9B8320B1A239AB991FA1B90F /* Bookkeeping */ = {
+			isa = PBXGroup;
+			children = (
+				B66B3254FB10A39CE630E2CE /* BookkeepingView.swift */,
+				571932AE2EEF9335477DEA42 /* DraftConfirmationView.swift */,
+				014BA9D983F552E8B2577118 /* DraftListView.swift */,
+				9FA647944569DF9974BDF459 /* ManualEntryView.swift */,
+			);
+			path = Bookkeeping;
+			sourceTree = "<group>";
+		};
+		A5FA180EE407F9752D813B51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E97ABB5B6F7E14E65FE1E /* Preview */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A90AEFF756A6C2EE13A74544 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FED7915015E3BDEC5E4034F4 /* FinanceRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B38E614D3E3264134139370D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				00CA6EAEA64CEDD332024E82 /* Models */,
+				14FAADBA451AE33DF5D81852 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA05A92758162889DFCC7480 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D98B06CCFDD15E4D789F2924 /* AssetEditorView.swift */,
+				F1458D91607348C659829BE4 /* AssetsView.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C65BF499FBDC6446B067FB85 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				1A997D0B60E47293E4CAEFFD /* RootTabView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D83D4A132B71331FC5E4A119 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A90AEFF756A6C2EE13A74544 /* Repositories */,
+				7A965425DEB08489573FBBE3 /* Seed */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DE70A7B9F8DC6B112C2DC536 /* LaicaiTests */ = {
+			isa = PBXGroup;
+			children = (
+				71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */,
+				AC1B1489C60671F64C6134B3 /* DraftConfirmationServiceTests.swift */,
+				6CB924F7AFE109D656DB8298 /* DraftCreationServiceTests.swift */,
+				35196527A2F89D7927FE5982 /* HomeSummaryTests.swift */,
+				029826C8A1019B345C74F5CD /* LocalDraftParserTests.swift */,
+				3516075228CFE25751ED3051 /* ManualEntryFlowTests.swift */,
+				B630B8720A3B2D780F3BBF94 /* ModelSchemaTests.swift */,
+				E7FEC2C983AF50230C2CCC53 /* NetWorthCalculatorTests.swift */,
+				B13C5FD4CB59E5A473EA1B4C /* VoiceDraftFlowTests.swift */,
+			);
+			path = LaicaiTests;
+			sourceTree = "<group>";
+		};
+		E9D99C237D9526CB813F5036 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C5E2AE8571781F388A8E7FC /* HomeView.swift */,
+				650F728EDE6A5DE32C6C9370 /* HomeViewModel.swift */,
+				5F3B6ADFA0530C678D7D1DD9 /* WealthSummaryCard.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED878ED735E906781C66DB59 = {
+			isa = PBXGroup;
+			children = (
+				60B305B2A923746B7ECD5396 /* Laicai */,
+				DE70A7B9F8DC6B112C2DC536 /* LaicaiTests */,
+				45D7A600C81DD10F6A418CC6 /* LaicaiUITests */,
+				637EDEB2762977FCC9FD04A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB4E97ABB5B6F7E14E65FE1E /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C01491AB64973614BCFB1 /* PreviewSeed.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		FC8ED3C8E5D907A4B5EF1189 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B0A66EC56CE6040D6FC0C /* AppContainer.swift */,
+				259890810D82E2D10DD5E015 /* LaicaiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A9664CE4974A4C1B19CF53 /* LaicaiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E799C4A4D21EB517C1234D /* Build configuration list for PBXNativeTarget "LaicaiUITests" */;
+			buildPhases = (
+				C3EAAA718233A2E01F671BBD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8412FDB1A0C2C2308B64FF /* PBXTargetDependency */,
+			);
+			name = LaicaiUITests;
+			packageProductDependencies = (
+			);
+			productName = LaicaiUITests;
+			productReference = 54227CFE64DC31BC0A348248 /* LaicaiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BAA4650EACCCFF5F12C83621 /* Laicai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8721CCC175F82CBB435E4F0 /* Build configuration list for PBXNativeTarget "Laicai" */;
+			buildPhases = (
+				A88694BC54E26EC6E73F8653 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Laicai;
+			packageProductDependencies = (
+			);
+			productName = Laicai;
+			productReference = F242FD366FDC5ACCAFD96470 /* Laicai.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5AD5BD112BBA684131DD088 /* LaicaiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8A2713FA7B1640F87E6CAA /* Build configuration list for PBXNativeTarget "LaicaiTests" */;
+			buildPhases = (
+				38FD5C1A69F6A2635C9E97AE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3D21E9BC5D495A3F2F1B2C3 /* PBXTargetDependency */,
+			);
+			name = LaicaiTests;
+			packageProductDependencies = (
+			);
+			productName = LaicaiTests;
+			productReference = 1501AABCC2A695A0159A96F0 /* LaicaiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9469F3BD7DB7A857E185C38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					78A9664CE4974A4C1B19CF53 = {
+						TestTargetID = BAA4650EACCCFF5F12C83621;
+					};
+					BAA4650EACCCFF5F12C83621 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 88D0264D4AD73AAB3107B987 /* Build configuration list for PBXProject "Laicai" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = ED878ED735E906781C66DB59;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 637EDEB2762977FCC9FD04A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAA4650EACCCFF5F12C83621 /* Laicai */,
+				D5AD5BD112BBA684131DD088 /* LaicaiTests */,
+				78A9664CE4974A4C1B19CF53 /* LaicaiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38FD5C1A69F6A2635C9E97AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A035CC7BB9B6B222C0F48728 /* AssetUpsertServiceTests.swift in Sources */,
+				46F33E45C2AC46BCB51A4E6E /* DraftConfirmationServiceTests.swift in Sources */,
+				BFF4948D111391AEA9029FA1 /* DraftCreationServiceTests.swift in Sources */,
+				6C1F94E2222B895C57BAF0A3 /* HomeSummaryTests.swift in Sources */,
+				E4577564C736ADC25AA59D3D /* LocalDraftParserTests.swift in Sources */,
+				DEC6774C44E766786AEE4338 /* ManualEntryFlowTests.swift in Sources */,
+				2F21FD3B1906053666ACD527 /* ModelSchemaTests.swift in Sources */,
+				5BFE5AEFA6F7DA6E245981F1 /* NetWorthCalculatorTests.swift in Sources */,
+				E4E064736922CEFD5C07C862 /* VoiceDraftFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88694BC54E26EC6E73F8653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AAD4CB38B8EF6ED6856FF4 /* Account.swift in Sources */,
+				B624CC6F8986686161AFA579 /* AppContainer.swift in Sources */,
+				93F3943BA9D339DF6AB074F5 /* Asset.swift in Sources */,
+				DC0E2221C10809EE36C793BC /* AssetCategory.swift in Sources */,
+				1897A57E37945E67C3260A72 /* AssetEditorView.swift in Sources */,
+				7609FDF223540CC04DCF9E77 /* AssetUpsertService.swift in Sources */,
+				8674A555ABB9D43085A87136 /* AssetsView.swift in Sources */,
+				1351024D550789A97EEC2134 /* BookkeepingView.swift in Sources */,
+				63A1A340205E8C5C3AC3287D /* DefaultCategorySeeder.swift in Sources */,
+				D8AE39D6FC9B58F5467A456D /* DraftConfirmationService.swift in Sources */,
+				A79618CD8DE4E139C922E7FA /* DraftConfirmationView.swift in Sources */,
+				CD4610D23D9683056031D9A3 /* DraftCreationService.swift in Sources */,
+				C7B9B45FFCEA6328CBD7BE15 /* DraftEntry.swift in Sources */,
+				8DEC1EEF27DF7609C67514A4 /* DraftListView.swift in Sources */,
+				A7C2D7FF82D3107730AF9072 /* FinanceRepository.swift in Sources */,
+				D1C5D503D8568C6CBB6CB202 /* HoldingSnapshot.swift in Sources */,
+				CFB817E5A1897C391127D408 /* HomeView.swift in Sources */,
+				E3D300BFD851D447223BDE13 /* HomeViewModel.swift in Sources */,
+				3C269DCDC892293AC167D98E /* InvestmentDashboardView.swift in Sources */,
+				2F65BBC9B9692C021F622CA1 /* LaicaiApp.swift in Sources */,
+				F0F5A94ADB6C119EBEE8E4A4 /* LocalDraftParser.swift in Sources */,
+				02B329A5A4B8F49311207766 /* ManualEntryView.swift in Sources */,
+				01E9D5AE111C19146BF83B6F /* NetWorthCalculator.swift in Sources */,
+				89FA6C528C896A3994378723 /* OCRService.swift in Sources */,
+				E53C55826218E4F6962FF4EC /* PreviewSeed.swift in Sources */,
+				F97F151FD151AD1E47902568 /* RootTabView.swift in Sources */,
+				5D48DA20C25A6513FFF8D3AE /* SettingsView.swift in Sources */,
+				C60C8114B542530EB4771788 /* TransactionRecord.swift in Sources */,
+				754091CA60AEC7FA7589C98E /* UserProfile.swift in Sources */,
+				BE075F93820C0BBC121FE068 /* VoiceRecognitionService.swift in Sources */,
+				7E09C2FE12EB9F5BD1493433 /* WealthSummaryCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EAAA718233A2E01F671BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D867A303EA4A1D72692B2540 /* AssetFlowUITests.swift in Sources */,
+				48E1B978D06BC08ABB7D09BB /* LaicaiLaunchTests.swift in Sources */,
+				25320F20CAEC32A9046E7592 /* PermissionsAndEmptyStateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C8412FDB1A0C2C2308B64FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA4650EACCCFF5F12C83621 /* Laicai */;
+			targetProxy = A0ACD72B9E85B1CE1EFE47B1 /* PBXContainerItemProxy */;
+		};
+		A3D21E9BC5D495A3F2F1B2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA4650EACCCFF5F12C83621 /* Laicai */;
+			targetProxy = 3B59466A37AE9B6905B35E1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FD9404F27EC5517276D0AA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.LaicaiTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laicai.app/Laicai";
+			};
+			name = Debug;
+		};
+		4D9B5A3198079C9735528750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于录入语音记账内容。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图并生成记账草稿。";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将语音内容转换为记账草稿。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.Laicai;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64F9C964C97701E72D5257B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.LaicaiUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Laicai;
+			};
+			name = Release;
+		};
+		7F379C3CA8B050F2771BE31B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.LaicaiUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Laicai;
+			};
+			name = Debug;
+		};
+		86DBE135BB2787841E1C6663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于录入语音记账内容。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图并生成记账草稿。";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将语音内容转换为记账草稿。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.Laicai;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C715D85F76DD6E0644AAADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A5491F2B9CF3228AAF6B8A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzixun.LaicaiTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laicai.app/Laicai";
+			};
+			name = Release;
+		};
+		F3342CB35EAEA65194C67E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88D0264D4AD73AAB3107B987 /* Build configuration list for PBXProject "Laicai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3342CB35EAEA65194C67E9B /* Debug */,
+				8C715D85F76DD6E0644AAADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CB8A2713FA7B1640F87E6CAA /* Build configuration list for PBXNativeTarget "LaicaiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD9404F27EC5517276D0AA0 /* Debug */,
+				A5491F2B9CF3228AAF6B8A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D0E799C4A4D21EB517C1234D /* Build configuration list for PBXNativeTarget "LaicaiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F379C3CA8B050F2771BE31B /* Debug */,
+				64F9C964C97701E72D5257B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8721CCC175F82CBB435E4F0 /* Build configuration list for PBXNativeTarget "Laicai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86DBE135BB2787841E1C6663 /* Debug */,
+				4D9B5A3198079C9735528750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9469F3BD7DB7A857E185C38 /* Project object */;
+}
