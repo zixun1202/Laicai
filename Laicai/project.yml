@@ -17,7 +17,8 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 用于选择账单截图并生成记账草稿。
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: 用于选择账单截图或待编辑图片。
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 用于保存编辑后的图片到相册。
         INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: 用于将语音内容转换为记账草稿。
         INFOPLIST_KEY_NSMicrophoneUsageDescription: 用于录入语音记账内容。
         CODE_SIGN_STYLE: Automatic

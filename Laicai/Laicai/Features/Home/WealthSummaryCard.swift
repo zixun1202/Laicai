@@ -4,42 +4,56 @@ struct WealthSummaryCard: View {
     let totalAssets: Decimal
     let totalLiabilities: Decimal
     let netWorth: Decimal
+    let currencyCode: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("总资产（CNY）")
-                .font(.headline)
-            Text("¥\(NSDecimalNumber(decimal: netWorth).stringValue)")
-                .font(.largeTitle.bold())
-            HStack(spacing: 16) {
-                Text("资产 ¥\(NSDecimalNumber(decimal: totalAssets).stringValue)")
-                Text("负债 ¥\(NSDecimalNumber(decimal: totalLiabilities).stringValue)")
-            }
-            .font(.subheadline)
-            .foregroundStyle(.secondary)
+            ReceiptInfoRow(label: "NET WORTH", value: money(netWorth))
 
-            HStack {
-                SummaryChip(title: "现金", tint: .gray)
-                SummaryChip(title: "投资", tint: .yellow)
-                SummaryChip(title: "固产", tint: .green)
-                SummaryChip(title: "负债", tint: .red)
+            VStack(spacing: 8) {
+                summaryLine(title: "资产", value: totalAssets, marker: "CASH")
+                summaryLine(title: "负债", value: totalLiabilities, marker: "DEBT")
+            }
+
+            HStack(spacing: 8) {
+                SummaryChip(title: "现金")
+                SummaryChip(title: "投资")
+                SummaryChip(title: "固产")
+                SummaryChip(title: "负债")
             }
         }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 24))
+        .padding(.vertical, 4)
+    }
+
+    private func summaryLine(title: String, value: Decimal, marker: String) -> some View {
+        HStack {
+            Text("· \(title)")
+            Spacer()
+            Text(marker)
+                .foregroundStyle(ReceiptStyle.fadedInk)
+            Text(money(value))
+        }
+        .font(ReceiptStyle.mono(13, weight: .semibold))
+        .foregroundStyle(ReceiptStyle.ink)
+    }
+
+    private func money(_ value: Decimal) -> String {
+        CurrencyFormatterService.money(value, currencyCode: currencyCode)
     }
 }
 
 private struct SummaryChip: View {
     let title: String
-    let tint: Color
 
     var body: some View {
         Text(title)
-            .font(.caption.bold())
-            .padding(.horizontal, 12)
+            .font(ReceiptStyle.mono(11, weight: .bold))
+            .foregroundStyle(ReceiptStyle.ink)
+            .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
-            .background(tint.opacity(0.15), in: Capsule())
+            .overlay(
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(ReceiptStyle.ink.opacity(0.55), style: StrokeStyle(lineWidth: 1, dash: [3, 3]))
+            )
     }
 }

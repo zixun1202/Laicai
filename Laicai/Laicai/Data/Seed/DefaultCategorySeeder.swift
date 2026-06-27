@@ -16,7 +16,7 @@ enum DefaultCategorySeeder {
                 iconName: "chart.line.uptrend.xyaxis",
                 colorHex: "#D0B56E",
                 sortOrder: 1,
-                subtypes: ["股票", "基金", "理财产品", "债券", "黄金", "加密资产"]
+                subtypes: ["股票", "基金", "ETF", "理财产品", "债券", "黄金", "加密资产"]
             ),
             AssetCategory(
                 name: "固定资产",
@@ -38,8 +38,33 @@ enum DefaultCategorySeeder {
     static func seedIfNeeded(context: ModelContext) throws {
         let descriptor = FetchDescriptor<AssetCategory>()
         let existing = try context.fetch(descriptor)
-        guard existing.isEmpty else { return }
+        guard existing.isEmpty else {
+            try updateExistingCategoriesIfNeeded(existing, context: context)
+            return
+        }
         defaultCategories().forEach { context.insert($0) }
         try context.save()
+    }
+
+    private static func updateExistingCategoriesIfNeeded(
+        _ categories: [AssetCategory],
+        context: ModelContext
+    ) throws {
+        var didChange = false
+        if let investmentCategory = categories.first(where: { $0.name == "投资资产" }),
+           !investmentCategory.subtypes.contains("ETF") {
+            var subtypes = investmentCategory.subtypes
+            if let fundIndex = subtypes.firstIndex(of: "基金") {
+                subtypes.insert("ETF", at: subtypes.index(after: fundIndex))
+            } else {
+                subtypes.append("ETF")
+            }
+            investmentCategory.subtypes = subtypes
+            didChange = true
+        }
+
+        if didChange {
+            try context.save()
+        }
     }
 }

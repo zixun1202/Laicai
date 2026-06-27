@@ -16,13 +16,15 @@ final class DraftConfirmationServiceTests: XCTestCase {
             type: .expense,
             amount: 888.5,
             categoryName: "生活消费",
-            note: "改成晚饭"
+            note: "改成晚饭",
+            currencyCode: "EUR"
         )
 
         XCTAssertEqual(record.type, .expense)
         XCTAssertEqual(record.amount, 888.5)
         XCTAssertEqual(record.categoryName, "生活消费")
         XCTAssertEqual(record.note, "改成晚饭")
+        XCTAssertEqual(record.currencyCode, "EUR")
     }
 
     func testTransactionTypeUsesChineseDisplayName() {

@@ -16,14 +16,16 @@ enum DraftConfirmationService {
         type: TransactionType,
         amount: Double,
         categoryName: String,
-        note: String
+        note: String,
+        currencyCode: String = "CNY"
     ) -> TransactionRecord {
         TransactionRecord(
             type: type,
             amount: amount,
             date: .now,
             categoryName: categoryName,
-            note: note
+            note: note,
+            currencyCode: currencyCode
         )
     }
 }

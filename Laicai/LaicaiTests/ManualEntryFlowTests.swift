@@ -8,11 +8,13 @@ final class ManualEntryFlowTests: XCTestCase {
             amount: 38,
             date: .now,
             categoryName: "餐饮",
-            note: "午饭"
+            note: "午饭",
+            currencyCode: "USD"
         )
 
         XCTAssertEqual(record.typeRawValue, TransactionType.expense.rawValue)
         XCTAssertEqual(record.amount, 38)
         XCTAssertEqual(record.note, "午饭")
+        XCTAssertEqual(record.currencyCode, "USD")
     }
 }

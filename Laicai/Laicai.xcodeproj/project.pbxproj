@@ -26,8 +26,23 @@
 		7E09C2FE12EB9F5BD1493433 /* WealthSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B6ADFA0530C678D7D1DD9 /* WealthSummaryCard.swift */; };
 		8674A555ABB9D43085A87136 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1458D91607348C659829BE4 /* AssetsView.swift */; };
 		89FA6C528C896A3994378723 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F90965124BD72799CEC8A /* OCRService.swift */; };
+		8B8A8E5E1B0D4D91A1C0F011 /* ReceiptStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A8E5E1B0D4D91A1C0F010 /* ReceiptStyle.swift */; };
 		8DEC1EEF27DF7609C67514A4 /* DraftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014BA9D983F552E8B2577118 /* DraftListView.swift */; };
 		93F3943BA9D339DF6AB074F5 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BD8843C130CC74E856CC2 /* Asset.swift */; };
+		97B6C1B7D71C4B28A52F1010 /* PortfolioSummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F100F /* PortfolioSummaryService.swift */; };
+		97B6C1B7D71C4B28A52F1012 /* TransactionImpactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1011 /* TransactionImpactService.swift */; };
+		97B6C1B7D71C4B28A52F1014 /* TransactionImpactServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1013 /* TransactionImpactServiceTests.swift */; };
+		97B6C1B7D71C4B28A52F1016 /* CurrencyFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1015 /* CurrencyFormatterService.swift */; };
+		97B6C1B7D71C4B28A52F1018 /* TransactionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1017 /* TransactionHistoryView.swift */; };
+		97B6C1B7D71C4B28A52F1020 /* TransactionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1019 /* TransactionEditorView.swift */; };
+		97B6C1B7D71C4B28A52F1022 /* CurrencyFormatterServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1021 /* CurrencyFormatterServiceTests.swift */; };
+		97B6C1B7D71C4B28A52F1024 /* LedgerArchiveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1023 /* LedgerArchiveService.swift */; };
+		97B6C1B7D71C4B28A52F1026 /* LedgerArchiveServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1025 /* LedgerArchiveServiceTests.swift */; };
+		97B6C1B7D71C4B28A52F1028 /* FundQuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1027 /* FundQuoteService.swift */; };
+		97B6C1B7D71C4B28A52F1030 /* FundQuoteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B6C1B7D71C4B28A52F1029 /* FundQuoteServiceTests.swift */; };
+		C0D3A1000000000000000001 /* ImageEditingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D3A1000000000000000004 /* ImageEditingService.swift */; };
+		C0D3A1000000000000000002 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D3A1000000000000000005 /* ImageEditorView.swift */; };
+		C0D3A1000000000000000003 /* ImageEditingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D3A1000000000000000006 /* ImageEditingServiceTests.swift */; };
 		A035CC7BB9B6B222C0F48728 /* AssetUpsertServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */; };
 		A79618CD8DE4E139C922E7FA /* DraftConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571932AE2EEF9335477DEA42 /* DraftConfirmationView.swift */; };
 		A7C2D7FF82D3107730AF9072 /* FinanceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7915015E3BDEC5E4034F4 /* FinanceRepository.swift */; };
@@ -97,8 +112,20 @@
 		6F2F0E507DFEE04808C45F97 /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
 		71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUpsertServiceTests.swift; sourceTree = "<group>"; };
 		86ABFA16AC882870E1DF54C6 /* AssetUpsertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUpsertService.swift; sourceTree = "<group>"; };
+		8B8A8E5E1B0D4D91A1C0F010 /* ReceiptStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptStyle.swift; sourceTree = "<group>"; };
 		9516799ED7FD973657700A15 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		9653BA94F2032E3B25BF8951 /* AssetFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetFlowUITests.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F100F /* PortfolioSummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSummaryService.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1011 /* TransactionImpactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionImpactService.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1013 /* TransactionImpactServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionImpactServiceTests.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1015 /* CurrencyFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterService.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1017 /* TransactionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryView.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1019 /* TransactionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEditorView.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1021 /* CurrencyFormatterServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterServiceTests.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1023 /* LedgerArchiveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerArchiveService.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1025 /* LedgerArchiveServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerArchiveServiceTests.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1027 /* FundQuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundQuoteService.swift; sourceTree = "<group>"; };
+		97B6C1B7D71C4B28A52F1029 /* FundQuoteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundQuoteServiceTests.swift; sourceTree = "<group>"; };
 		99AE383BA7219EA6641DBA18 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		9C5E2AE8571781F388A8E7FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9FA647944569DF9974BDF459 /* ManualEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualEntryView.swift; sourceTree = "<group>"; };
@@ -110,6 +137,9 @@
 		B630B8720A3B2D780F3BBF94 /* ModelSchemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSchemaTests.swift; sourceTree = "<group>"; };
 		B66B3254FB10A39CE630E2CE /* BookkeepingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookkeepingView.swift; sourceTree = "<group>"; };
 		B6969952FCDAC2001145841C /* AssetCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCategory.swift; sourceTree = "<group>"; };
+		C0D3A1000000000000000004 /* ImageEditingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditingService.swift; sourceTree = "<group>"; };
+		C0D3A1000000000000000005 /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
+		C0D3A1000000000000000006 /* ImageEditingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditingServiceTests.swift; sourceTree = "<group>"; };
 		D98B06CCFDD15E4D789F2924 /* AssetEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetEditorView.swift; sourceTree = "<group>"; };
 		E7FEC2C983AF50230C2CCC53 /* NetWorthCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthCalculatorTests.swift; sourceTree = "<group>"; };
 		F1458D91607348C659829BE4 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
@@ -145,9 +175,15 @@
 			isa = PBXGroup;
 			children = (
 				86ABFA16AC882870E1DF54C6 /* AssetUpsertService.swift */,
+				97B6C1B7D71C4B28A52F1015 /* CurrencyFormatterService.swift */,
 				4D9A6172E989C992FA1DAA58 /* DraftConfirmationService.swift */,
 				2D4D1860073FFFD62D2FC2EA /* DraftCreationService.swift */,
+				97B6C1B7D71C4B28A52F1027 /* FundQuoteService.swift */,
+				C0D3A1000000000000000004 /* ImageEditingService.swift */,
+				97B6C1B7D71C4B28A52F1023 /* LedgerArchiveService.swift */,
 				274E9AA8EA3F4FA0659D9815 /* NetWorthCalculator.swift */,
+				97B6C1B7D71C4B28A52F100F /* PortfolioSummaryService.swift */,
+				97B6C1B7D71C4B28A52F1011 /* TransactionImpactService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,11 +261,29 @@
 				BA05A92758162889DFCC7480 /* Assets */,
 				9B8320B1A239AB991FA1B90F /* Bookkeeping */,
 				E9D99C237D9526CB813F5036 /* Home */,
+				C0D3A1000000000000000007 /* ImageEditing */,
 				717FAB3F279D0DFA9DB29D47 /* Investments */,
 				C65BF499FBDC6446B067FB85 /* Root */,
 				08DB255303AC8BAC4EFC2FCB /* Settings */,
+				8B8A8E5E1B0D4D91A1C0F012 /* Shared */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		8B8A8E5E1B0D4D91A1C0F012 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8B8A8E5E1B0D4D91A1C0F010 /* ReceiptStyle.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C0D3A1000000000000000007 /* ImageEditing */ = {
+			isa = PBXGroup;
+			children = (
+				C0D3A1000000000000000005 /* ImageEditorView.swift */,
+			);
+			path = ImageEditing;
 			sourceTree = "<group>";
 		};
 		7A965425DEB08489573FBBE3 /* Seed */ = {
@@ -255,6 +309,8 @@
 				571932AE2EEF9335477DEA42 /* DraftConfirmationView.swift */,
 				014BA9D983F552E8B2577118 /* DraftListView.swift */,
 				9FA647944569DF9974BDF459 /* ManualEntryView.swift */,
+				97B6C1B7D71C4B28A52F1019 /* TransactionEditorView.swift */,
+				97B6C1B7D71C4B28A52F1017 /* TransactionHistoryView.swift */,
 			);
 			path = Bookkeeping;
 			sourceTree = "<group>";
@@ -314,13 +370,18 @@
 			isa = PBXGroup;
 			children = (
 				71C9B061020AFB4FFE5FF8DB /* AssetUpsertServiceTests.swift */,
+				97B6C1B7D71C4B28A52F1021 /* CurrencyFormatterServiceTests.swift */,
 				AC1B1489C60671F64C6134B3 /* DraftConfirmationServiceTests.swift */,
 				6CB924F7AFE109D656DB8298 /* DraftCreationServiceTests.swift */,
+				97B6C1B7D71C4B28A52F1029 /* FundQuoteServiceTests.swift */,
 				35196527A2F89D7927FE5982 /* HomeSummaryTests.swift */,
+				C0D3A1000000000000000006 /* ImageEditingServiceTests.swift */,
+				97B6C1B7D71C4B28A52F1025 /* LedgerArchiveServiceTests.swift */,
 				029826C8A1019B345C74F5CD /* LocalDraftParserTests.swift */,
 				3516075228CFE25751ED3051 /* ManualEntryFlowTests.swift */,
 				B630B8720A3B2D780F3BBF94 /* ModelSchemaTests.swift */,
 				E7FEC2C983AF50230C2CCC53 /* NetWorthCalculatorTests.swift */,
+				97B6C1B7D71C4B28A52F1013 /* TransactionImpactServiceTests.swift */,
 				B13C5FD4CB59E5A473EA1B4C /* VoiceDraftFlowTests.swift */,
 			);
 			path = LaicaiTests;
@@ -464,13 +525,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A035CC7BB9B6B222C0F48728 /* AssetUpsertServiceTests.swift in Sources */,
+				97B6C1B7D71C4B28A52F1022 /* CurrencyFormatterServiceTests.swift in Sources */,
 				46F33E45C2AC46BCB51A4E6E /* DraftConfirmationServiceTests.swift in Sources */,
 				BFF4948D111391AEA9029FA1 /* DraftCreationServiceTests.swift in Sources */,
+				97B6C1B7D71C4B28A52F1030 /* FundQuoteServiceTests.swift in Sources */,
 				6C1F94E2222B895C57BAF0A3 /* HomeSummaryTests.swift in Sources */,
+				C0D3A1000000000000000003 /* ImageEditingServiceTests.swift in Sources */,
+				97B6C1B7D71C4B28A52F1026 /* LedgerArchiveServiceTests.swift in Sources */,
 				E4577564C736ADC25AA59D3D /* LocalDraftParserTests.swift in Sources */,
 				DEC6774C44E766786AEE4338 /* ManualEntryFlowTests.swift in Sources */,
 				2F21FD3B1906053666ACD527 /* ModelSchemaTests.swift in Sources */,
 				5BFE5AEFA6F7DA6E245981F1 /* NetWorthCalculatorTests.swift in Sources */,
+				97B6C1B7D71C4B28A52F1014 /* TransactionImpactServiceTests.swift in Sources */,
 				E4E064736922CEFD5C07C862 /* VoiceDraftFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,24 +554,34 @@
 				8674A555ABB9D43085A87136 /* AssetsView.swift in Sources */,
 				1351024D550789A97EEC2134 /* BookkeepingView.swift in Sources */,
 				63A1A340205E8C5C3AC3287D /* DefaultCategorySeeder.swift in Sources */,
+				97B6C1B7D71C4B28A52F1016 /* CurrencyFormatterService.swift in Sources */,
 				D8AE39D6FC9B58F5467A456D /* DraftConfirmationService.swift in Sources */,
 				A79618CD8DE4E139C922E7FA /* DraftConfirmationView.swift in Sources */,
 				CD4610D23D9683056031D9A3 /* DraftCreationService.swift in Sources */,
 				C7B9B45FFCEA6328CBD7BE15 /* DraftEntry.swift in Sources */,
 				8DEC1EEF27DF7609C67514A4 /* DraftListView.swift in Sources */,
 				A7C2D7FF82D3107730AF9072 /* FinanceRepository.swift in Sources */,
+				97B6C1B7D71C4B28A52F1028 /* FundQuoteService.swift in Sources */,
 				D1C5D503D8568C6CBB6CB202 /* HoldingSnapshot.swift in Sources */,
 				CFB817E5A1897C391127D408 /* HomeView.swift in Sources */,
 				E3D300BFD851D447223BDE13 /* HomeViewModel.swift in Sources */,
+				C0D3A1000000000000000002 /* ImageEditorView.swift in Sources */,
+				C0D3A1000000000000000001 /* ImageEditingService.swift in Sources */,
 				3C269DCDC892293AC167D98E /* InvestmentDashboardView.swift in Sources */,
 				2F65BBC9B9692C021F622CA1 /* LaicaiApp.swift in Sources */,
+				97B6C1B7D71C4B28A52F1024 /* LedgerArchiveService.swift in Sources */,
 				F0F5A94ADB6C119EBEE8E4A4 /* LocalDraftParser.swift in Sources */,
 				02B329A5A4B8F49311207766 /* ManualEntryView.swift in Sources */,
 				01E9D5AE111C19146BF83B6F /* NetWorthCalculator.swift in Sources */,
 				89FA6C528C896A3994378723 /* OCRService.swift in Sources */,
+				97B6C1B7D71C4B28A52F1010 /* PortfolioSummaryService.swift in Sources */,
 				E53C55826218E4F6962FF4EC /* PreviewSeed.swift in Sources */,
+				8B8A8E5E1B0D4D91A1C0F011 /* ReceiptStyle.swift in Sources */,
 				F97F151FD151AD1E47902568 /* RootTabView.swift in Sources */,
 				5D48DA20C25A6513FFF8D3AE /* SettingsView.swift in Sources */,
+				97B6C1B7D71C4B28A52F1020 /* TransactionEditorView.swift in Sources */,
+				97B6C1B7D71C4B28A52F1018 /* TransactionHistoryView.swift in Sources */,
+				97B6C1B7D71C4B28A52F1012 /* TransactionImpactService.swift in Sources */,
 				C60C8114B542530EB4771788 /* TransactionRecord.swift in Sources */,
 				754091CA60AEC7FA7589C98E /* UserProfile.swift in Sources */,
 				BE075F93820C0BBC121FE068 /* VoiceRecognitionService.swift in Sources */,
@@ -566,7 +642,8 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于录入语音记账内容。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图并生成记账草稿。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "用于保存编辑后的图片到相册。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图或待编辑图片。";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将语音内容转换为记账草稿。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -626,7 +703,8 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "用于录入语音记账内容。";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图并生成记账草稿。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "用于保存编辑后的图片到相册。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "用于选择账单截图或待编辑图片。";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "用于将语音内容转换为记账草稿。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

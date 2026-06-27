@@ -9,7 +9,10 @@ final class AssetUpsertServiceTests: XCTestCase {
             subtypeName: "银行卡",
             currentValue: 5000,
             costBasis: 5000,
-            linkedAccountName: "工资卡"
+            linkedAccountName: "工资卡",
+            currencyCode: "USD",
+            quoteSymbol: "161725",
+            quoteMarket: .china
         )
 
         let asset = AssetUpsertService.apply(form: form, to: nil)
@@ -20,6 +23,9 @@ final class AssetUpsertServiceTests: XCTestCase {
         XCTAssertEqual(asset.currentValue, 5000)
         XCTAssertEqual(asset.costBasis, 5000)
         XCTAssertEqual(asset.linkedAccountName, "工资卡")
+        XCTAssertEqual(asset.currencyCode, "USD")
+        XCTAssertNil(asset.quoteSymbol)
+        XCTAssertNil(asset.quoteMarketRawValue)
     }
 
     func testApplyUpdatesExistingAsset() {
@@ -37,7 +43,10 @@ final class AssetUpsertServiceTests: XCTestCase {
             subtypeName: "基金",
             currentValue: 2200,
             costBasis: 1800,
-            linkedAccountName: "蚂蚁财富"
+            linkedAccountName: "蚂蚁财富",
+            currencyCode: "EUR",
+            quoteSymbol: " voo ",
+            quoteMarket: .overseas
         )
 
         let updated = AssetUpsertService.apply(form: form, to: asset)
@@ -47,5 +56,36 @@ final class AssetUpsertServiceTests: XCTestCase {
         XCTAssertEqual(updated.currentValue, 2200)
         XCTAssertEqual(updated.costBasis, 1800)
         XCTAssertEqual(updated.linkedAccountName, "蚂蚁财富")
+        XCTAssertEqual(updated.currencyCode, "EUR")
+        XCTAssertEqual(updated.quoteSymbol, "VOO")
+        XCTAssertEqual(updated.quoteMarket, .overseas)
+    }
+
+    func testApplyClearsQuoteMetadataForNonQuoteAssets() {
+        let asset = Asset(
+            name: "旧基金",
+            categoryName: "投资资产",
+            subtypeName: "基金",
+            currentValue: 1200,
+            quoteSymbol: "161725",
+            quoteMarket: .china
+        )
+        let form = AssetFormData(
+            name: "现金",
+            categoryName: "现金与账户",
+            subtypeName: "现金",
+            currentValue: 2200,
+            costBasis: 2200,
+            linkedAccountName: "",
+            currencyCode: "CNY",
+            quoteSymbol: "VOO",
+            quoteMarket: .overseas
+        )
+
+        let updated = AssetUpsertService.apply(form: form, to: asset)
+
+        XCTAssertEqual(updated.categoryName, "现金与账户")
+        XCTAssertNil(updated.quoteSymbol)
+        XCTAssertNil(updated.quoteMarketRawValue)
     }
 }
